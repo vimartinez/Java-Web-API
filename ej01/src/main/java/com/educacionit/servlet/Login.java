@@ -29,12 +29,16 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Petición GET222: ").append(request.getContextPath());
-		//request.getQueryString();
-		request.getSession().invalidate();
-		
-		response.sendRedirect("Formulario.jsp");
+		//logout = 1 es unicamente cuando viene del index a través del link cerrar sesión
+		String logout =  request.getParameter("logout");
+		if (logout.equals("1")) {
+			request.getSession().invalidate();
+			request.setAttribute("mensajeLogout", "Sesión cerrada correctamente");
+			request.getRequestDispatcher("Formulario.jsp").forward(request, response);
+		}
+		else {
+			response.sendRedirect("index.jsp");
+		}
 	}
 
 	/**
@@ -55,15 +59,17 @@ public class Login extends HttpServlet {
 			httpSesion.setAttribute("usuario", usr);
 			httpSesion.setAttribute("nombre", usr.getNombreApe());
 			httpSesion.setAttribute("msg", "Bienvenido ");
+			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
 		else {
-			// credenciales incorrectas
+			// credenciales incorrectas, mensaje de error y recargar formulario
 			request.setAttribute("mensajeError", "Usuario y Clave incorrectos");
+			request.getRequestDispatcher("Formulario.jsp").forward(request, response);
 		}
 		
 		//redirigir al index
-		request.setAttribute("mailIngresado", mail);
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		//request.setAttribute("mailIngresado", mail);
+		//request.getRequestDispatcher("index.jsp").forward(request, response);
 		//escribir en pantalla
 		//response.getWriter().append("Petición POST: ").append(mail);
 	}
