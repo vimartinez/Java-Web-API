@@ -29,9 +29,11 @@ public class Dado {
 		
 		if(carasSoportadas.contains(cantidadDeCaras)) {
 			resultado = (Integer.valueOf((int)(Math.random()*cantidadDeCaras+1))).toString();
+			System.out.println( "Se tiraron los dados!, salió:"+resultado );
 		}
 		else {
 			resultado = "No existe un dado con "+cantidadDeCaras+" caras!";
+			System.out.println( resultado );
 		}
 		
 		return resultado;
