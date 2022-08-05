@@ -7,3 +7,12 @@ Si no está en sesión no se puede acceder al index, si está en sesión no se p
 
 Ejercicio 02 - Web Service SOAP
 Generación de un WS Soap con dos métodos para tirar dados, un tira un dado de 6 caras y el otro permite enviar la cantidad de caras del dado. Estas pueden ser 4, 6, 8, 12 y 20 caras.
+
+Ejercicio 03 - Web Service SOAP Tomcat
+Implementación del Web Service SOAP del ejercio 02 en el server tomcat, se genera un web service jax-ws que expone los métodos generados en el ejercicio 02
+
+Ejercicio 04 - Web Service SOAP Cliente
+Generación de un cliente SOAP que consume los servicios expuestos por el ejercicio 03.
+
+Ejercicio 05 - Web Service REST
+Generación de servicio web REST básico utilizando jax-rs, solo acepta una solicitud GET
