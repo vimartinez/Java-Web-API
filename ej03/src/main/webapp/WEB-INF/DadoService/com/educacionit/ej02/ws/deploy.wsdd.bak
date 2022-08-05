@@ -1,0 +1,29 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from DadoService WSDL service -->
+
+  <service name="Dado" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://ws.ej02.educacionit.com"/>
+      <parameter name="wsdlServiceElement" value="DadoService"/>
+      <parameter name="schemaQualified" value="http://ws.ej02.educacionit.com"/>
+      <parameter name="wsdlServicePort" value="Dado"/>
+      <parameter name="className" value="com.educacionit.ej02.ws.DadoSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Dado"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="tirarDado" qname="operNS:tirarDado" xmlns:operNS="http://ws.ej02.educacionit.com" returnQName="retNS:tirarDadoReturn" xmlns:retNS="http://ws.ej02.educacionit.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:cantidadDeCaras" xmlns:pns="http://ws.ej02.educacionit.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="tirarDado"/>
+
+  </service>
+</deployment>
