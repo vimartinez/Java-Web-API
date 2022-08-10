@@ -16,3 +16,6 @@ Generación de un cliente SOAP que consume los servicios expuestos por el ejerci
 
 Ejercicio 05 - Web Service REST
 Generación de servicio web REST básico utilizando jax-rs, solo acepta una solicitud GET
+
+Ejercicio 06 - Web Service REST
+CRUD de usuarios en tomcat con jax-ws implementando un DAO - MySQL, 3 capas (controller, service y DAO) - colección de Postman

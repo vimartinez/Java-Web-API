@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "3daca10e-11aa-42bc-8596-042d4e8840c2",
+		"name": "JavaWebAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7489244"
+	},
+	"item": [
+		{
+			"name": "Ej05",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Ej06-getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ej06/JWA/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ej06",
+						"JWA",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ej06-getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ej06/JWA/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ej06",
+						"JWA",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ej06-addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 1,\r\n        \"nombreApellido\": \"Victor Mmmmmm\",\r\n        \"mail\": \"victorm@hotmail.com\",\r\n        \"direccion\": \"sssss ddd e123, CABA\",\r\n        \"clave\": \"1234\",\r\n        \"fechaNacimiento\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ej06/JWA/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ej06",
+						"JWA",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ej06-updUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 33,\r\n        \"nombreApellido\": \"33333 Mmmmmm\",\r\n        \"mail\": \"v3333rm@hotmail.com\",\r\n        \"direccion\": \"sssss ddd e123, CABA\",\r\n        \"clave\": \"1234\",\r\n        \"fechaNacimiento\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ej06/JWA/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ej06",
+						"JWA",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ej06-delUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 45,\r\n        \"nombreApellido\": \"3eeeeeeee33 Mmmmmm\",\r\n        \"mail\": \"v3333rm@hotmail.com\",\r\n        \"direccion\": \"sssss ddd e123, CABA\",\r\n        \"clave\": \"12dddd34\",\r\n        \"fechaNacimiento\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ej06/JWA/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ej06",
+						"JWA",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
