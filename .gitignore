@@ -28,3 +28,4 @@ hs_err_pid*
 .settings/
 
 .target/
+/ej01/target/m2e-wtp/web-resources/*.gitignore
