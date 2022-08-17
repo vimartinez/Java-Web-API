@@ -16,16 +16,16 @@ public class UserService {
 		return userDao.getAll();
 	}
 
-	public void addUser(User user) {
-		userDao.add(user);
+	public Boolean addUser(User user) {
+		return userDao.add(user);
 	}
 
-	public void updUser(User user) {
-		userDao.upd(user);
+	public Boolean updUser(User user) {
+		return userDao.upd(user);
 	}
 
-	public void delUser(User user) {
-		userDao.del(user);
+	public Boolean delUser(User user) {
+		return userDao.del(user);
 	}
 
 }
