@@ -5,12 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Movie {
-	private Integer id;
-	private String nombre;
-	private String sipnopsis;
-	private String cover;
-
+@NoArgsConstructor
+public class User {
+	private String userName;
+	private String mail;
+	private String clave;
+	private String nombreApellido;
+	
 }

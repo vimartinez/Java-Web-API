@@ -19,3 +19,6 @@ Generación de servicio web REST básico utilizando jax-rs, solo acepta una soli
 
 Ejercicio 06 - Web Service REST
 CRUD de usuarios en tomcat con jax-ws implementando un DAO - MySQL, 3 capas (controller, service y DAO) - colección de Postman
+
+Ejercicio 07 - Web Service REST II
+API que sugiere películas en función del título ingresado, consume API de YTS (https://yts.mx/api), con Spring Boot, OpenAPI, Swagger, JPA, Repository, Lombok, Actuator
