@@ -31,4 +31,20 @@ public class MovieRepositoryCustomImpl implements MovieRepositoryCustom {
 		return entityManager.createQuery(query).getResultList();
 	}
 
+	@Override
+	public List<Movie> getAllMoviesByYearAndDurationLessThan(Integer year, Integer duration) {
+		
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+		CriteriaQuery<Movie> query = cb.createQuery(Movie.class);
+		Root<Movie> root = query.from(Movie.class);
+		List<Predicate> predicates = new ArrayList<>();
+		
+		predicates.add(cb.and(cb.equal(root.get("yearOfRelease"),year)));
+		predicates.add(cb.and(cb.lt(root.get("duration"), duration)));
+		
+		query.select(root).where(cb.and(predicates.toArray(new Predicate[predicates.size()])));
+		
+		return entityManager.createQuery(query).getResultList();
+	}
+
 }

@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import com.educacionit.ej07.model.Movie;
 import com.educacionit.ej07.repository.MovieRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class MovieService {
 	
@@ -23,8 +26,8 @@ public class MovieService {
 		return movieRepository.findById(id);
 	}
 
-	public void addMovie(Movie movie) {
-		movieRepository.save(movie);		
+	public Movie addMovie(Movie movie) {
+		return movieRepository.save(movie);		
 	}
 
 	public void updMovie(Movie movie) {
@@ -45,6 +48,11 @@ public class MovieService {
 
 	public List<Movie> getAllMoviesByYearCriteria(Integer year) {
 		return movieRepository.getMoviesByYearCriteria(year);
+	}
+
+	public List<Movie> getAllMoviesByYearAndDurationLessThan(Integer year, Integer duration) {
+		log.info("year:"+ year + " duration:" + duration);
+		return movieRepository.getAllMoviesByYearAndDurationLessThan(year, duration);
 	}
 
 }
