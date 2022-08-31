@@ -21,4 +21,7 @@ Ejercicio 06 - Web Service REST
 CRUD de usuarios en tomcat con jax-ws implementando un DAO - MySQL, 3 capas (controller, service y DAO) - colección de Postman
 
 Ejercicio 07 - Web Service REST II
-API que sugiere películas en función del título ingresado, consume API de YTS (https://yts.mx/api), con Spring Boot, OpenAPI, Swagger, JPA, Repository, Lombok, Actuator
+API que sugiere películas en función del título ingresado, consume API de YTS (https://yts.mx/api), con Spring Boot, OpenAPI, Swagger, JPA, H2, Repository, Lombok, Actuator, JUnit
+
+Ejercicio 08 - JSF App login usando DAO y BD MySQL
+Se reutiliza el DAO del ej06 para generar un login contra BD
