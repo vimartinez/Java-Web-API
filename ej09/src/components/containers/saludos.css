@@ -1,0 +1,12 @@
+#saludosDiv{
+    border: 2px solid chocolate;
+    border-radius: 25px;
+    width: 800px;
+}
+
+#saludosTitulo{
+    border-bottom: 1px solid;
+    border-color: chartreuse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}

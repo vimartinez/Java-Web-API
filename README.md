@@ -26,3 +26,6 @@ API que sugiere películas en función del título ingresado, consume API de YTS
 Ejercicio 08 - JSF App usando DAO, BD MySQL y external API
 Se reutiliza el DAO del ej06 para generar un login contra BD utilizand JSF, Templates JSF, se consume una API de https://datosgobar.github.io/georef-ar-api/ para cargar el listado de provincias de la República Argentina y luego se buscan los departamentos de una provincia seleccionada.
 Logo de la API tomado de https://www.flaticon.es/
+
+Ejercicio 09 - Introducción a React
+Aplicación de saludo con componentes tipo Class, Function y contenedores.
