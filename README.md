@@ -28,4 +28,5 @@ Se reutiliza el DAO del ej06 para generar un login contra BD utilizand JSF, Temp
 Logo de la API tomado de https://www.flaticon.es/
 
 Ejercicio 09 - Introducción a React
-Aplicación de saludo con componentes tipo Class, Function y contenedores.
+Aplicación de saludo con componentes tipo Class, Function, contenedores, css, renderizado condicional.
+Bootstrap, generación de componente header, consumo de una api de https://jsonplaceholder.typicode.com/ y mostrar resultados en una tabla con estilo bootstrap

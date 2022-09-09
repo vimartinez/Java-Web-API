@@ -32,9 +32,7 @@ class SaludoClass extends Component{
         ))
     }
 
-
 }
-
 
 SaludoClass.propTypes = {
     name: PropTypes.string,

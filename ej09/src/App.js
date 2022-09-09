@@ -1,14 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import SaludoClass from './components/saludoClass';
-import SaludoFunciton from './components/saludoFuncion';
-import SaludoLog from './components/saludoLog';
+
+import './components/pure/saludoClass';
+
+import HeaderComponent from './components/pure/headerComponent';
+import BadgeComponent from './components/pure/badgeComponent';
+import ApiConsumer from './components/pure/apiConsumer';
+import SaludoClass from './components/pure/saludoClass';
+import SaludoFunciton from './components/pure/saludoFuncion';
 import Saludos from './components/containers/saludos';
+import SaludoEstilo from './components/pure/saludoEstilo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -21,13 +27,17 @@ function App() {
         >
           Learn React
         </a> */}
-        {/* <SaludoClass name='Victor'></SaludoClass>
-        <SaludoFunciton name={'Sergio'}></SaludoFunciton>
+        {/*<SaludoClass name='Victor'></SaludoClass>
+        <SaludoFunciton name='Jose'></SaludoFunciton>
         <SaludoFunciton name={'Mariana'}></SaludoFunciton>
-        <SaludoLog></SaludoLog> */}
+        <SaludoLog></SaludoLog>  */}
         {/* Llamar a un único componente que contiene a los demás */}
-        <Saludos></Saludos>
-      </header>
+        {/* <Saludos></Saludos> */}
+        <HeaderComponent title ="Java Web API"></HeaderComponent>
+        <BadgeComponent texto="Ej 09 - React"></BadgeComponent> 
+        {/* <SaludoEstilo name="Marcelo"></SaludoEstilo> */}
+        <ApiConsumer></ApiConsumer>
+      {/* </header> */}
     </div>
   );
 }

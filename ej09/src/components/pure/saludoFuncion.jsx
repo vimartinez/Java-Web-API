@@ -8,7 +8,6 @@ const SaludoFunciton = (props) => {
         setAge(age + 1);
     }
 
-
     return (
         <div>
             <h3>Componente Function</h3>

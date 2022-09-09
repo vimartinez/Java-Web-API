@@ -1,7 +1,7 @@
 import React from "react";
-import SaludoClass from "../saludoClass";
-import SaludoFunciton from "../saludoFuncion";
-import SaludoLog from "../saludoLog";
+import SaludoClass from "../pure/saludoClass";
+import SaludoFunciton from "../pure/saludoFuncion";
+import SaludoLog from "../pure/saludoLog";
 import './saludos.css'
 
 const Saludos = () =>  {
@@ -16,5 +16,7 @@ const Saludos = () =>  {
         </div>
     )
 }
+
+
 
 export default Saludos;
