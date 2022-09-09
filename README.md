@@ -7,7 +7,7 @@ Ejercicio 01 - Sesiones
 Sesiones en JSP: Formulario de login en jsp, si las credenciales son correctas se genera una sesión, se obtienen datos del usuario y redirecciona al index donde se muestran estos datos. De no ser así se muestra mensaje de error y se redirecciona nuevamente al login.
 Si no está en sesión no se puede acceder al index, si está en sesión no se puede acceder al formulario de login.
 
-![Ej01](https://user-images.githubusercontent.com/19653664/189352484-96b46962-6a5e-4baa-aee1-ef61dd655fad.png)
+![Ej01](https://user-images.githubusercontent.com/19653664/189353583-aad7577d-85f5-4f46-aa54-5948044e1b3e.png)
 
 Ejercicio 02 - Web Service SOAP
 
