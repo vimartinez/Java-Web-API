@@ -53,3 +53,11 @@ Bootstrap, generación de componente header, consumo de una api de https://jsonp
 
 ![Ej09](https://user-images.githubusercontent.com/19653664/189350188-a1e68e02-c243-420d-b2e6-fe881f716752.png)
 
+Ej 10 - Consumo de una API Java desde React
+Consumo de una API Local desarrollada en el ejercicio 7, se muestra un listado de películas.
+
+![Ej10](https://user-images.githubusercontent.com/19653664/190039895-28642228-bd8b-4432-90ba-a570c6602ed2.png)
+
+Ej 11 - Consumo de API de Circuitos de F1 desde front end React con reutilización de componentes
+
+![Ej11](https://user-images.githubusercontent.com/19653664/190040035-6ca39b9f-758c-4b24-90fb-61800b0c4d8b.png)
